@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body class="">
+    <main class="container main d-flex">
+      <!-- left section  -->
+      <section class="left d-grid">
+        <div class="left__logo d-flex">
+          <div class="avatar">
+            <img src="./assets/images/profile1.jpg" alt="avatar" />
+          </div>
+          <div class="about d-grid">
+            <div class="name">AR Shakir</div>
+            <p class="position">Sr.Visual Deisgner</p>
+          </div>
+        </div>
+        <!-- teams -->
+        <div class="teams d-grid">
+          <div class="teams__title">Teams</div>
+          <div class="teams__select jc-sb">
+            <select name="teams" id="teams">
+              <option value="">Readwhile llc</option>
+              <option value="">Readwhile llc</option>
+              <option value="">Readwhile llc</option>
+            </select>
+            <div class="teams__arrow d-grid">
+              <i class="fa-solid fa-angle-up"></i>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+          </div>
+        </div>
+
+        <!-- menu  -->
+        <div class="menu">
+          <h3 class="menu__title">Menu</h3>
+          <ul class="menu__list d-grid">
+            <li>
+              <a href="#"><i class="fa-solid fa-inbox"></i> Dashboard</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-message"></i>Inbox
+                <span class="counter">1</span></a
+              >
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-user"></i>Account</a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-solid fa-fire-flame-curved"></i>Trending</a
+              >
+            </li>
+            <li>
+              <a href="#" class="d-flex"
+                ><i class="fa-regular fa-calendar"></i>Meetings
+                <span class="meeting__count">5</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- settings  -->
+        <div class="settings d-grid">
+          <div class="setting__title">Setting & Beat</div>
+          <a class=""><i class="fa-solid fa-gear"></i>Settings</a>
+          <a class="beat">
+            <i class="fa-solid fa-arrow-trend-up"></i> Daily Beat
+          </a>
+        </div>
+
+        <!-- actions -->
+        <div class="quick__actions d-flex">
+          <a href="/"><i class="fa-solid fa-pencil"></i></a>
+          <a href="/"><i class="fa-solid fa-compass"></i></a>
+          <a href="/"><i class="fa-solid fa-arrow-trend-up"></i></a>
+          <a href="/"><i class="fa-solid fa-star"></i></a>
+        </div>
+
+        <!-- add invoice -->
+        <div class="invoice d-grid">
+          <ul class="invoice__list"></ul>
+          <i class="fa-solid fa-plus"></i>
+          <i class="fa-solid fa-check invoice__check"></i>
+          <textarea
+            name="incoice"
+            id="invoice__area "
+            class="invoice__area active"
+            cols="20"
+            rows="5"
+          ></textarea>
+          <h4 class="invoice__title">Add New Invoice</h4>
+          <p class="invoice__link">or use <a href="/">Invite Link</a></p>
+        </div>
+
+        <!-- theme toggle  -->
+        <div class="theme__toggle d-flex">
+          <button id="theme_dark" class="btn">
+            <i class="fa-regular fa-moon"></i> Dark
+          </button>
+          <button id="theme_light" class="btn active-btn">
+            <i class="fa-solid fa-sun"></i>light
+          </button>
+        </div>
+      </section>
+      <!-- main body section  -->
+
+      <section class="main__content">
+        <div class="searchbox d-flex jc-sb">
+          <div class="searchbox__content">
+            <h2 class="searchbox__title">Analytics</h2>
+            <p>Welcome back , Let's get back to work</p>
+          </div>
+
+          <div class="searchbox__input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+              type="search"
+              placeholder="Search Dashboard"
+              name="search"
+              id="search"
+            />
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+        </div>
+
+        <!-- analytics card section  -->
+        <div class="analytics__cards d-flex jc-sb">
+          <div class="card">
+            <div class="card__details d-flex">
+              <i class="fa-solid fa-circle-user"></i>
+              <div>
+                <p>Total Connections</p>
+                <p class="a-count">2140</p>
+              </div>
+            </div>
+            <div class="range"><span data-range="50" class="after"></span></div>
+            <div class="card-last">
+              <i class="fa-solid fa-chart-column"> </i> <span> +45% </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__details d-flex">
+              <i class="fa-solid fa-shield-halved"></i>
+              <div>
+                <p>Total Connections</p>
+                <p class="a-count">2140</p>
+              </div>
+            </div>
+            <div class="range">
+              <span class="after" data-range="100"></span>
+            </div>
+            <div class="card-last">
+              <i class="fa-solid fa-chart-column"></i><span>+45% </span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__details d-flex">
+              <i class="fa-solid fa-file-lines"></i>
+              <div>
+                <p>Total Connections</p>
+                <p class="a-count">2140</p>
+              </div>
+            </div>
+            <div class="range"><span class="after" data-range="80"></span></div>
+            <div class="card-last">
+              <i class="fa-solid fa-chart-column"></i> <span>+45% </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- earning section  -->
+        <!-- dahboard section  -->
+        <div class="dashboard d-flex jc-sb">
+          <div class="dashboard__left d-grid">
+            <div class="dashboard__title d-flex jc-sb">
+              <div class="dashboard__title-content">
+                <h5>total earning</h5>
+                <p>500k</p>
+              </div>
+              <div class="dashboard__title-content">
+                <h5>period</h5>
+                <p>1 month</p>
+              </div>
+              <div class="dashboard__title-content">
+                <h5>Upcoming Project</h5>
+                <p>245</p>
+              </div>
+            </div>
+
+            <div class="dashboard__container">
+              <canvas id="myChart" width="20" height="10"></canvas>
+            </div>
+          </div>
+          <!-- summary  -->
+          <div class="dashboard__summary-container dashboard__right d-flex">
+            <div class="dashboard__summary">
+              <h5>Personal Loans</h5>
+              <p>$45,000</p>
+            </div>
+            <div class="dashboard__summary">
+              <h5>Subscriptions</h5>
+              <p>$495</p>
+            </div>
+            <div class="dashboard__summary">
+              <h5>Income</h5>
+              <p>$15,000</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row fd-column">
+          <div class="row cta">
+            <div class="cta__left">
+              <div class="cta__left-title d-flex jc-sb">
+                <h4>Latest Customers</h4>
+                <span>View all</span>
+              </div>
+              <div class="cta__left__card d-flex">
+                <img src="./assets/images/profile1.jpg" alt="" />
+                <div class="profile">
+                  <div class="name">Harry Joe</div>
+                  <div class="history">
+                    <span>24 puchases</span> <span>123 likes</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-message"></i>
+              </div>
+              <div class="cta__left__card d-flex">
+                <img src="./assets/images/profile.jpg" alt="" />
+                <div class="profile">
+                  <div class="name">Martha June</div>
+                  <div class="history">
+                    <span>24 puchases</span> <span>123 likes</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-message"></i>
+              </div>
+              <div class="cta__left__card d-flex">
+                <img src="./assets/images/profile2.jpg" alt="" />
+                <div class="profile">
+                  <div class="name">Sarah Altman</div>
+                  <div class="history">
+                    <span>24 puchases</span> <span>123 likes</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-message"></i>
+              </div>
+              <div class="cta__left__card d-flex">
+                <img src="./assets/images/profile1.jpg" alt="" />
+                <div class="profile">
+                  <div class="name">Michel CLerk</div>
+                  <div class="history">
+                    <span>24 puchases</span> <span>123 likes</span>
+                  </div>
+                </div>
+                <i class="fa-solid fa-message"></i>
+              </div>
+            </div>
+
+            <!-- cta right  -->
+            <div class="cta__right d-flex fd-column jc-sb">
+              <div class="cta__right-title d-flex jc-sb">
+                <h3>Your Professional Status</h3>
+                <span><i class="fa-solid fa-bars"></i></span>
+              </div>
+              <div class="cta__right-level row jc-sb">
+                <div class="cta__right-level-left d-flex fd-column jc-sb">
+                  <div class="d-grid Current-level">
+                    <h6>Current Level</h6>
+                    <span>Expert</span>
+                  </div>
+                  <div class="d-grid spent">
+                    <h6>Spent</h6>
+                    <span>$1550<span class="bold">/ $3,550</span> </span>
+                  </div>
+                </div>
+                <div class="cta__circle cta__right-level-right">
+                  <div
+                    id="cta_c"
+                    data-value="75"
+                    data-color="blue"
+                    data-start="0"
+                    class="circle"
+                  >
+                    <span
+                      id="cta_c"
+                      data-value="50"
+                      data-color="pink"
+                      data-start="0"
+                      class="circle-1"
+                    >
+                      <span
+                        id="cta_c"
+                        data-value="75"
+                        data-color="light-green"
+                        data-start="0"
+                        class="circle-2"
+                      >
+                        <span
+                          id="cta_c"
+                          data-value="0"
+                          data-color="white"
+                          data-start="0"
+                          class="circle-3"
+                        >
+                          <span class="circle__innerText">50</span></span
+                        >
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="notifications">
+                <i class="fa-solid fa-rocket"></i> you'll get new subscription
+                offers
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- right section  -->
+      <section class="right">
+        <div class="circle"></div>
+        <div class="right__menu d-flex">
+          <i class="fa-solid fa-message"></i>
+          <span class="notification__count">
+            <i class="fa-solid fa-bell"></i
+          ></span>
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="right__profile">
+          <div class="logo">
+            <div class="logo-right d-grid">
+              <img src="./assets/images/profile1.jpg" alt="logo" />
+            </div>
+            <p>AR Shakir</p>
+            <p>Designer</p>
+          </div>
+        </div>
+        <!-- about section  -->
+        <div class="about d-flex jc-sb">
+          <div class="proects">
+            <p class="projects__count">457</p>
+            <div class="project__title">Projects</div>
+          </div>
+          <div class="proects">
+            <p class="projects__count">457</p>
+            <div class="project__title">Projects</div>
+          </div>
+          <div class="proects">
+            <p class="projects__count">457</p>
+            <div class="project__title">Projects</div>
+          </div>
+        </div>
+
+        <!-- plannning sectio  -->
+        <div class="planning d-grid">
+          <div class="planning__card">
+            <div class="planning__card-title d-flex">
+              <i class="fa-solid left-fa fa-location-crosshairs"></i>
+              <span>Goals</span>
+              <i class="fa-solid right-fa fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="planning__card">
+            <div class="planning__card-title d-flex">
+              <i class="fa-solid left-fa fa-calendar"></i>
+              <span>Monthly Plan</span>
+              <i class="fa-solid right-fa fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="planning__card">
+            <div class="planning__card-title d-flex">
+              <i class="fa-solid left-fa fa-gear"></i>
+              <span>Settings</span>
+              <i class="fa-solid right-fa fa-angle-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="project__status d-grid">
+          <div class="project__status-title">Project Status</div>
+          <div class="project__status-count">
+            <span class="bold">121</span> / 143
+          </div>
+          <div class="task__status">task completed</div>
+          <div class="project__status-meter d-grid">
+            <div class="project__status-meter-deg">
+              <i class="fa-solid fa-location-arrow"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- javascript -->
+    <!-- chart js  -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"
+      integrity="sha512-ElRFoEQdI5Ht6kZvyzXhYG9NqjtkmlkfYk0wr6wHxU9JEHakS7UJZNeml5ALk+8IKlU6jDgMabC3vkumRokgJA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/index.js"></script>
+    <script>
+      const ctx = document.getElementById("myChart").getContext("2d");
+      const myChart = new Chart(ctx, {
+        type: "bar",
+        data: {
+          labels: [
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+          ],
+          datasets: [
+            {
+              label: "Monthly Earning",
+              order: 2,
+              data: [3, 3, 1.5, 2.2, 3.3, 2.8, 1, 2.9, 2.2, 2.2, 3.4, 2.8],
+              backgroundColor: [" #FF7901"],
+              borderRadius: 5,
+              borderColor: [" transparent"],
+              borderWidth: 0.4,
+              barPercentage: 0.5,
+              width: 1,
+              borderSkipped: false,
+            },
+            {
+              type: "line",
+              pointBorderColor: "transparent",
+              pointBackgroundColor: "transparent",
+              borderJoinStyle: "bevel",
+              order: 1,
+              label: "Upcoming income",
+              data: [9.1, 7, 7.2, 7.8, 7, 6, 6.5, 7.7, 4, 5, 7, 8],
+              backgroundColor: "transparent",
+              borderColor: "#51459F",
+              borderWidth: 2,
+            },
+          ],
+        },
+        options: {
+          responsive: true,
+
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+
+      // setup
+    </script>
+  </body>
+</html>

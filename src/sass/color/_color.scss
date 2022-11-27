@@ -1,0 +1,26 @@
+$colors: (
+  primary: (
+    "orange": #ff7902,
+    "heading": #395b50,
+    "pink":#fe747c,
+    "purple": #51459d,
+    "green": #274740,
+    "light-green":#27ae60,
+    "body-bg": #c6d3e8,
+    "section-bg": #fcfbff,
+    "body-font": #222121ce,
+    "border": #a99487,
+    "font": #1c1b1f,
+    "blue": #51459F,
+    "white":#fff,
+    "black":#000,
+    "notification":#f8efe0,
+  ),
+);
+:root {
+  @each $color, $shade in $colors {
+    @each $key, $value in $shade {
+      --clr-#{$color}-#{$key}: #{$value};
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@use "./media/breakpoints" as *;
+@use "./color/color" as *;
+@use "./header" as *;
+@use "./mixin" as *;
+@use "./main" as *;
+@use "./right" as *;
+@use './dark' as *;
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+.container {
+  @include mq(md) {
+    max-width: 1400px;
+    width: 100%;
+  }
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--clr-primary-body-bg);
+  color: var(--clr-primary-body-font);
+  font-weight: 400;
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  background-color: var(--clr-primary-section-bg);
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+.jc-c {
+  justify-content: center;
+}
+.jc-sb {
+  justify-content: space-between;
+}
+.d-block {
+  display: block;
+}
+.d-grid {
+  display: grid;
+}
+.fd-column {
+  flex-direction: column;
+}
+.fd-row {
+  flex-direction: row;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: var(--clr-primary-body-font);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  &:hover {
+    color: var(--clr-primary-orange);
+  }
+}
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.main {
+//  flex-wrap: wrap;
+  @include mq(lg) {
+    flex-wrap: nowrap;
+  
+  
+  }
+  // flex-wrap: wrap;
+  align-items: flex-start;
+}
+.row{
+  display: flex;
+
+}

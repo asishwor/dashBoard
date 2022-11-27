@@ -1,0 +1,8 @@
+@mixin pseudo($element, $content: "", $pos: absolute) {
+  position: relative;
+  &::#{$element} {
+    position: $pos;
+    content: $content;
+    @content;
+  }
+}
